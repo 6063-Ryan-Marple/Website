@@ -1,0 +1,157 @@
+<style>
+
+
+div.navbar {
+	position: absolute;
+	width: 1000px;
+	margin: 20px 0 0 0;
+	background-color: #aaaaaa;
+}
+
+div.title {
+	position: absolute;
+	width: 800px;
+	height: 100%;
+	text-align: center;
+	display: inline-block;
+}
+
+body {
+	background-color: #CCBB66;
+	background-image: url("res/bg.png");
+	height: 2000px;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+div.outer {
+	margin: 0 auto 0 auto;
+	width: 1000px;
+	background-color: #BBBBBB;
+}
+
+div.body {
+	position: absolute;
+	width: 1000px;
+	height: 1500px;
+	margin-top: 66px;
+	z-index: 0;
+	background-color: rgba(100, 100, 100,.93); 
+	
+}
+
+div.heading {
+	height=150px;
+	width=1000px;
+	margin-top: 100px;
+}
+
+#logo {
+	display: inline-block;
+}
+
+div.title {
+	position: absolute;
+	display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	z-index: 1;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+	z-index: -1;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+	z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+</style>
+
+<html>
+	<body>
+		<div class="outer">
+			<div class="heading">
+				<div id="logo">
+					<img src="res/logo.png" width=200 height=150 />
+				</div>
+				<div class="title">
+					<h1>GLC PINEAPPLES ROBOTICS TEAM</h1>
+				</div>
+			</div>
+				
+			<div class="navbar">
+				<ul>
+				  <li><a class="active" href="#home">Home</a></li>
+				  <li><a href="#news">Team News</a></li>
+				  <li class="dropdown">
+					<a href="#" class="dropbtn">Robots</a>
+					<div class="dropdown-content">
+					  <a href="#">2015 - Genesis One</a>
+					  <a href="#">2016 - Exodus One</a>
+					</div>
+				  </li>
+				  <li><a href="#photos">Photos</a></li>
+				  <li><a href="#sponsors">Sponsors</a></li>
+				</ul>
+			</div>
+			
+			<div class="body">
+
+			</div>
+		</div>
+		
+	</body>
+</html>
